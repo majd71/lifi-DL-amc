@@ -1,0 +1,12 @@
+create python 3.12 virtual environment:
+python3.12 -m venv .venv
+
+activate it:
+source .venv/bin/activate
+
+istall libraries:
+pip install torch torchvision torchaudio seaborn matplotlib tqdm scipy scikit-learn
+(for xpu -> uninstall the stadard torch torchvision
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu)
+
+then in vscode -> ctrl+shift+P -> python interpreter -> select venv
